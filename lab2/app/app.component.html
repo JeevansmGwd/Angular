@@ -1,0 +1,8 @@
+<h1> Sharing Data Between Components</h1>
+<h2>Sending data to Child</h2>
+<button (click)="sendObject()">Send to Child</button>
+<app-child-reciever [objFromParent]=obj></app-child-reciever>
+<h2>Recieving data from Child</h2>
+<app-child-sender (objectEvent)="recieveObj($event)"></app-child-sender>
+<p>Name of the Student Recieved from the Child is : {{fromChildObject.name}}</p>
+<p>Phone Number of the Student Recieved from the Child is: {{fromChildObject.phone}}</p>

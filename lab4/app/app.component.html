@@ -1,0 +1,3 @@
+<p>Enter String : <input type="text" name="str" id="str" placeholder="Enter the string" #stringVariable></p>
+  <button (click)="sendData(stringVariable.value)">Submit</button>
+  <p>The String After Passing Through Pipe is : {{ str | charPipe : length }}</p>
