@@ -5,8 +5,8 @@ const port = 3001;
 app.use(cors())
 app.use(express.json())
 let data = [{
-    name:"Prithesh salian",
-    age:"20"
+    name:"JEEVAN S M",
+    age:"21"
 }]
 
 app.get("/", function (req, res) {
